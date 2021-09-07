@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Sans-Serif;
+    outline: none;
+}
+
+.container {
+    background: white;
+}
+/*title*/
+.todo-title {
+    color: #4b53de;
+    margin: 10px 0 5px 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*input text*/
+input {
+    height: 50px;
+    width: 270px;
+    margin: 10px 5px 10px 10px;
+    outline: none;
+    border: 1px solid #4b53de;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input::placeholder {
+    color: gray;
+}
+
+.text-field {
+    padding-left: 5px;
+}
+
+.btn-submit {
+    height: 50px;
+    width: 50px;
+    border: none;
+    outline: none;
+    background-color: #4b53de;
+    border-radius: 3px;
+    font-size: 17px;
+    color: white;
+}
+
+.btn-submit:hover {
+    background: white;
+    border: 1px solid #4b53de;
+    color: black;
+    cursor: pointer;
+}
+
+/* todo list  */
+.list-content {
+    border-radius: 5px;
+    background: #4b53de;
+    margin: 10px 5px 10px 10px;
+    height: 40px;
+    width: 330px;
+    padding-left: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+.list {
+    display: block;
+    height: 40px;
+    margin: 13px 0 20px 5px;
+    position: relative;
+}
+
+.teks-todo {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+/* input checkbox */
+.checkbox {
+    height: 25px;
+    width: 25px;
+    margin-top: -6px;
+    position: fixed;
+    right: 40px;
+}
+
+/* icon hapus  */
+.fa-trash-o {
+    display: block;
+    height: 60px;
+    right: 10px;
+    position: absolute;
+}
+
+/*icon edit */
+.fa-pencil-square-o {
+    display: block;
+    height: 60px;
+    right: 80px;
+    top: 5px;
+    position: absolute;
+}
+
+
+
+/* MEDIA QUERY */
+@media only screen and (min-width: 300px) and (max-width: 576px) {
+    input {
+        width: 270px;
+    }
+}
+
+@media only screen and (min-width: 580px) and (max-width: 768px) {
+    input {
+        width: 560px;
+    }
+    .list-content {
+        width: 620px;
+    }
+}
